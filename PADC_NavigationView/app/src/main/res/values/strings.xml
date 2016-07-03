@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PADC - LinkedIn</string>
+    <string name="action_settings">Settings</string>
+    <string name="left_menu_linkedin">PADC - LinedIn</string>
+    <string name="left_menu_job_search">PADC - Job Search</string>
+    <string name="left_menu_pulse">PADC - Pulse</string>
+    <string name="left_menu_movie">PADC - ရုပ်ရှင်</string>
+    <string name="left_menu_book">PADC - ဝန်ဇင်း</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_view_profile_text1">37</string>
+    <string name="txt_view_profile_text2">Who\'s viewed your profile</string>
+    <string name="txt_view_share_text1">0</string>
+    <string name="txt_view_share_text2">Who\'s viewed your share</string>
+    <string name="txt_linked_in_txt1">Strengthen your profile</string>
+    <string name="txt_linked_in_txt2">Yinmin, help hiring managers and old coworkers find you</string>
+    <string name="txt_linked_in_txt3">Add a past position so others can easily find and connect with you</string>
+    <string name="txt_contact_info">Contact and Personal Info</string>
+    <string name="txt_contact_profile">Your Profile\nhttps://www.linkedin.com/in/yinmin-thu-b78072122</string>
+    <string name="txt_contact_email">Email\npymthu90@gmail.com</string>
+    <string name="txt_see_more">See more</string>
+</resources>

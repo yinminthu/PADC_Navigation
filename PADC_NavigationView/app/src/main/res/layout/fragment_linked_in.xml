@@ -1,0 +1,235 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="xyz.phyoeyinminthu.padc_navigationview.fragments.LinkedInFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation= "vertical"
+       >
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/linkedin_profile"
+        />
+
+       <TabWidget
+           android:id="@+id/tw_view"
+           android:layout_width="182dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_below="@id/iv_profile"
+           android:padding="@dimen/margin_medium_2"
+           android:layout_margin="@dimen/margin_medium"
+           android:background="@color/cardview_light_background"
+           >
+
+           <TextView
+               android:id="@+id/tv_view_profile_text1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:text="@string/txt_view_profile_text1"
+               android:textColor="@color/text_link"
+               android:linksClickable="true"
+               />
+
+           <TextView
+               android:id="@+id/tv_view_profile_text2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/text_small"
+               android:text="@string/txt_view_profile_text2"
+               />
+
+       </TabWidget>
+
+       <TabWidget
+           android:id="@+id/tw_share"
+           android:layout_width="182dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_below="@id/iv_profile"
+           android:layout_alignParentRight="true"
+           android:padding="@dimen/margin_medium_2"
+           android:layout_margin="@dimen/margin_medium"
+           android:background="@color/cardview_light_background"
+           >
+
+           <TextView
+               android:id="@+id/tv_view_share_text1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="18sp"
+               android:text="@string/txt_view_share_text1"
+               android:textColor="@color/text_link"
+               android:linksClickable="true"
+               />
+
+           <TextView
+               android:id="@+id/tv_view_share_text2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="@dimen/text_small"
+               android:text="@string/txt_view_share_text2"
+               />
+
+       </TabWidget>
+
+       <RelativeLayout
+           android:id="@+id/rl_strengthen_profile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_below="@id/tw_share"
+           android:padding="@dimen/margin_medium_2"
+           android:layout_marginRight="@dimen/margin_medium"
+           android:layout_marginLeft="@dimen/margin_medium"
+           android:background="@color/white"
+           >
+
+           <TextView
+               android:id="@+id/tv_strength"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/txt_linked_in_txt1"
+               android:layout_marginBottom="@dimen/margin_medium_3"
+
+               />
+
+           <ImageView
+               android:id="@+id/iv_linked_in_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/linked_in_icon"
+               android:layout_below="@id/tv_strength" />
+
+           <TextView
+               android:id="@+id/tv_strength_content"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/txt_linked_in_txt2"
+               android:layout_below="@id/tv_strength"
+               android:layout_alignParentRight="true"
+               android:textSize="@dimen/text_small"
+               android:textColor="@color/black"
+               android:paddingTop="4dp"
+               android:layout_marginBottom="@dimen/margin_medium_3"
+               />
+
+           <TextView
+               android:id="@+id/tv_past_position"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/txt_linked_in_txt3"
+               android:layout_below="@id/tv_strength_content"
+               android:layout_alignParentRight="true"
+               android:textSize="@dimen/text_small"
+               android:paddingTop="4dp"
+               />
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/rl_contact_info"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_below="@id/rl_strengthen_profile"
+           android:padding="@dimen/margin_medium_2"
+           android:layout_marginRight="@dimen/margin_medium"
+           android:layout_marginLeft="@dimen/margin_medium"
+           android:background="@color/white"
+           android:layout_marginTop="@dimen/margin_medium"
+           >
+
+           <TextView
+               android:id="@+id/tv_contact_info"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/txt_contact_info"
+               android:layout_marginBottom="@dimen/margin_medium_3"
+
+               />
+
+           <TabWidget
+               android:id="@+id/tw_contact_profile"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_below="@id/tv_contact_info"
+               android:padding="@dimen/margin_medium"
+               android:background="@color/cardview_light_background"
+               >
+
+               <ImageView
+                   android:id="@+id/iv_your_profile"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/small_icon_in"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_your_profile"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txt_contact_profile"
+                   android:layout_below="@id/tv_strength"
+                   android:layout_alignParentRight="true"
+                   android:paddingLeft="@dimen/margin_medium_2"
+                   />
+
+           </TabWidget>
+
+           <TabWidget
+               android:id="@+id/tw_contact_email"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_below="@id/tw_contact_profile"
+               android:padding="@dimen/margin_medium"
+               android:background="@color/cardview_light_background"
+               >
+
+               <ImageView
+                   android:id="@+id/iv_your_email"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/small_icon_email"
+                   />
+
+               <TextView
+                   android:id="@+id/tv_your_email"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/txt_contact_email"
+                   android:layout_below="@id/tv_strength"
+                   android:paddingLeft="@dimen/margin_medium_2"
+                   />
+
+           </TabWidget>
+
+       </RelativeLayout>
+       <TextView
+           android:id="@+id/tv_see_more"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/txt_see_more"
+           android:layout_below="@id/rl_contact_info"
+           android:padding="@dimen/margin_medium_2"
+           android:textAlignment="center"
+           android:textColor="@color/text_link"
+           android:linksClickable="true"
+           android:layout_marginLeft="@dimen/margin_medium"
+           android:layout_marginRight="@dimen/margin_medium"
+           />
+
+   </RelativeLayout>
+
+</ScrollView>
